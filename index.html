@@ -10,13 +10,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>王哲的作品集</title>
   <link href="./css/index.css" rel="stylesheet">
-  <script src="./js/index.js"></script>
+  <script>
+    // 重置移动端页面字号
+    if (document.documentElement.clientWidth > 1024) {
+      document.documentElement.style.fontSize = '55px'
+    } else {
+      document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
+    }
+  </script>
 </head>
 
 <body>
   <div class="bgimg">
     <img class="images" src="./images/bgimg.jpg" alt="">
   </div>
+  <div id="myModal" class="modal">
+    <!-- 模态框内容 -->
+    <div class="modal-content">
+      <p>请输入访问密码:</p>
+      <input type="text" id="nameInput">
+      <button id="submitBtn">提交</button>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
 </body>
 
 
