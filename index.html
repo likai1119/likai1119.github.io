@@ -4,28 +4,37 @@
  * @Description: 
 -->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王哲的作品集</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <script>
+      // 重置移动端页面字号
+      if (document.documentElement.clientWidth > 1024) {
+        document.documentElement.style.fontSize = "55px";
+      } else {
+        document.documentElement.style.fontSize =
+          document.documentElement.clientWidth / 7.5 + "px";
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>王哲的作品集</title>
-  <link href="./css/index.css" rel="stylesheet">
-  <script>
-    // 重置移动端页面字号
-    if (document.documentElement.clientWidth > 1024) {
-      document.documentElement.style.fontSize = '55px'
-    } else {
-      document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px'
-    }
-  </script>
-</head>
-
-<body>
-  <div class="bgimg">
-    <img class="images" src="./images/bgimg.jpg" alt="">
-  </div>
-  <div id="myModal" class="modal">
-    <!-- 模态框内容 -->
+  <body>
+    <div class="bgimg">
+      <img src="./images/2.jpg" class="images" alt="" />
+      <img src="./images/3.jpg" class="images" alt="" />
+      <img src="./images/3-1.jpg" class="images" alt="" />
+      <img src="./images/3-2.jpg" class="images" alt="" />
+      <img src="./images/3-3.jpg" class="images" alt="" />
+      <img src="./images/3-4.jpg" class="images" alt="" />
+      <img src="./images/4.jpg" class="images" alt="" />
+      <img src="./images/4-1.jpg" class="images" alt="" />
+      <img src="./images/4-2.jpg" class="images" alt="" />
+      <img src="./images/4-3.jpg" class="images" alt="" />
+      <img src="./images/4-4.jpg" class="images" alt="" />
+    </div>
+    <div id="myModal" class="modal">
     <div class="modal-content">
       <p>请输入访问密码:</p>
       <input type="text" id="nameInput">
@@ -33,7 +42,5 @@
     </div>
   </div>
   <script src="./js/index.js"></script>
-</body>
-
-
+  </body>
 </html>
