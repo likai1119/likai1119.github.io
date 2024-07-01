@@ -43,6 +43,10 @@ i {
     width: 1200px;
     margin: 0 auto;
   }
+  .videobg {
+    width: 100%;
+    margin: 0 auto;
+  }
   .images {
     width: 100%;
   }
@@ -99,8 +103,9 @@ i {
     display: none;
   }
   .images {
-   max-width: 100%;
+    max-width: 100%;
   }
+
   .modal {
     display: block;
     position: relative;
