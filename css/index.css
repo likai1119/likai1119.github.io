@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+main {
+  width: 100%;
+}
+.video-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 比例，可根据视频实际比例调整 */
+  height: 0;
+}
+#video-1-0 {
+  padding-bottom: 47.9% !important;
+}
+#video-2-0 {
+  padding-bottom: 47.9% !important;
+}
+#video-3-0 {
+  padding-bottom: 47.9% !important;
+}
+#video-4-0 {
+  padding-bottom: 47.9% !important;
+}
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body {
+  font-size: 18px;
+}
+.image-container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.clickable-areas {
+  position: absolute;
+  top: 37%;
+  left: 6.7%;
+  width: 100%;
+  height: 45%;
+}
+.click-area {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+}
+/* 四个点击区域平均分布 */
+.area1 {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+}
+.area2 {
+  top: 0;
+  left: 22%;
+  width: 20%;
+  height: 100%;
+}
+.area3 {
+  bottom: 0;
+  left: 45%;
+  width: 20%;
+  height: 100%;
+}
+.area4 {
+  bottom: 0;
+  left: 67%;
+  width: 20%;
+  height: 100%;
+}
+.background-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 56.25%;
+  position: relative;
+}
+.adaptive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+.adaptive-image2 {
+  width: 6%;
+  position: absolute;
+  top: 5%;
+  right: 0.5%;
+  cursor: pointer;
+}
+.adaptive-image3 {
+  width: 6%;
+  position: absolute;
+  top: 25%;
+  right: 0.5%;
+  cursor: pointer;
+}
+.video-container-2 {
+  width: 100%;
+}
+.fullscreen-video2 {
+  position: absolute;
+  top: 7.5%;
+  right: 13.5%;
+  width: 27%;
+  object-fit: contain;
+}
+body .head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body .head .head-img {
+  width: 100%;
+}
+.video-row {
+  width: 100%;
+  display: flex;
+  padding: 0 6.8%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.video-item {
+  width: 32%;
+  padding-bottom: 57%;
+  position: relative;
+  overflow: hidden;
+}
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image-section {
+  width: 100%;
+}
+.image-section .responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 悬浮导航条样式 */
+.floating-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.floating-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.floating-nav li {
+  margin: 0 10px;
+}
+.floating-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+.floating-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .floating-nav {
+    padding: 8px 12px;
+  }
+  .floating-nav li {
+    margin: 0 3px;
+    display: inline-block;
+    text-align: center;
+  }
+  .floating-nav a {
+    font-size: 11px;
+    padding: 4px 6px;
+    white-space: nowrap;
+  }
+}
+.video-row-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.8%;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+.video-item-2 {
+  width: 48%;
+  position: relative;
+  padding-bottom: 27%; /* 16:9 比例 */
+  height: 0;
+  overflow: hidden;
+}
+.video-thumbnail-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fullscreen-video3 {
+  position: absolute;
+  top: 8.5%;
+  right: 10%;
+  width: 30%;
+  object-fit: contain;
+}
+.video-row-3 {
+  margin-top: 4%;
+}
