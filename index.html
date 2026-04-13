@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+        // 禁止右键菜单
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        // 禁用F12和相关快捷键
+        document.addEventListener('keydown', function (e) {
+            // 检测F12键
+            if (e.key === 'F12') {
+                e.preventDefault();
+            }
+            // 检测Ctrl+Shift+I (打开开发者工具的快捷键)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+            }
+            // 检测Ctrl+Shift+J (打开控制台的快捷键)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'J') {
+                e.preventDefault();
+            }
+            // 检测Ctrl+U (查看源代码的快捷键)
+            if ((e.ctrlKey || e.metaKey) && e.key === 'U') {
+                e.preventDefault();
+            }
+        });
+    </script>
 </head>
 
 <body>
