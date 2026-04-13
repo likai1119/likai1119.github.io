@@ -8,15 +8,32 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  background-color: #fafafa;
 }
 main {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .video-container {
   width: 100%;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 比例，可根据视频实际比例调整 */
   height: 0;
+}
+.video-border {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #fafafa; /* 可以根据需要修改颜色 */
+}
+.video-border.left {
+  left: 0;
+  z-index: 999;
+}
+.video-border.right {
+  right: 0;
+  z-index: 999;
 }
 #video-1-0 {
   padding-bottom: 47.9% !important;
@@ -184,9 +201,9 @@ body .head .head-img {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #3fabf7;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -200,9 +217,9 @@ body .head .head-img {
   margin: 0 10px;
 }
 .floating-nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px 10px;
   border-radius: 15px;
   transition: background-color 0.3s;
@@ -210,11 +227,15 @@ body .head .head-img {
   text-align: center;
 }
 .floating-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #3fabf7;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
   .floating-nav {
     padding: 8px 12px;
   }
@@ -257,7 +278,10 @@ body .head .head-img {
   top: 8.5%;
   right: 10%;
   width: 30%;
-  object-fit: contain;
+  height: 83%;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .video-row-3 {
   margin-top: 4%;
